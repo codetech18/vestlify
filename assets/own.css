@@ -1,0 +1,27 @@
+.bt-icons {
+    display: flex;
+    align-items: center
+}
+
+.coin-name {
+    margin-bottom: 0;
+}
+
+.coin-label {
+    font-size: 10px;
+    margin-top: 0;
+}
+
+.coin-table>td {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.coin-table {
+    
+}
+
+.iconscoin {
+    font-size: 40px;
+}

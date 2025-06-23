@@ -1,0 +1,51 @@
+body .card-body .user-bx {
+  display: grid;
+
+  /* grid-template-columns: 1fr 1fr;  */
+}
+
+body .card-body .user-name .payment {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(91, 207, 197, 0.3);
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+body .card-body .user-name .trade {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 0;
+  justify-content: space-between;
+}
+
+body .card-body .user-name .trade .first {
+  color: rgb(74, 163, 74) !important;
+  font-size: larger;
+}
+
+body .card-body .user-name .trade .date {
+  border: 1px solid rgb(241, 240, 240);
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+body .card-body .user-name .copy {
+  display: flex;
+  justify-content: space-between;
+}
+
+body .card-body .user-name .copy p {
+  cursor: pointer;
+}
+
+body .card-body .user-name .metals {
+  border: 1px solid white;
+  margin: 0;
+  padding: 0;
+}
