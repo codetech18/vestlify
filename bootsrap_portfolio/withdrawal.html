@@ -2021,28 +2021,28 @@
             user_name: window.localStorage.getItem("username"),
             email: window.localStorage.getItem("email"),
           };
-          // pVPZU7Bt
-          //   if (window.localStorage.getItem("balance") === "0") {
-          //     alert(
-          //       "Unfortunately, you do not have sufficient balance to withdraw!"
-          //     );
-          //     return;
-          //   } else {
-          //     try {
-          //       // alert("Your withdrawal is being processed!");
-          //       document.querySelector(".popup3").classList.add("active");
-          //       document.querySelector(".popup").classList.remove("active");
-          //       const res = await fetch("https://submit-form.com/2ENohsFUT", {
-          //         method: "POST",
-          //         headers: {
-          //           "Content-Type": "application/json",
-          //         },
-          //         body: JSON.stringify(data),
-          //       });
-          //     } catch (error) {
-          //       console.log(error);
-          //     }
-          //   }
+          //   pVPZU7Bt
+          if (window.localStorage.getItem("balance") === "0") {
+            alert(
+              "Unfortunately, you do not have sufficient balance to withdraw!"
+            );
+            return;
+          } else {
+            try {
+              // alert("Your withdrawal is being processed!");
+              document.querySelector(".popup3").classList.add("active");
+              document.querySelector(".popup").classList.remove("active");
+              const res = await fetch("https://submit-form.com/DUeXCaHdO", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+              });
+            } catch (error) {
+              console.log(error);
+            }
+          }
         } else {
           alert("Fill in the required details");
         }
