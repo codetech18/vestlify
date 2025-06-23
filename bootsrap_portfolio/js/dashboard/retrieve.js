@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Updates the profit balnce displayed on the dashboard using the data gotten from the realtime database.
     profit.innerHTML = `$${snapshot.profit}`;
 
-    total.innerHTML = `$${snapshot.balance}`;
+    total.innerHTML = `$${snapshot.profit + snapshot.balance}`;
 
     email.innerHTML = snapshot.email;
 
